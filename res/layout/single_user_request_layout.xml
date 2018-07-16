@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_user_request_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/single_user_request_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/harlequine" />
+
+
+    <TextView
+        android:id="@+id/single_user_request_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/single_user_request_image"
+        android:layout_marginStart="101dp"
+        android:text="Default Name"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/single_user_request_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/single_user_request_name"
+        android:layout_marginTop="50dp"
+        android:text="Default Status"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/single_user_request_status"
+        android:layout_below="@+id/single_user_request_image"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="-15dp"
+        android:background="@android:color/holo_green_light"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="ACCEPT"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/decline_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/single_user_request_image"
+        android:layout_marginEnd="87dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-15dp"
+        android:background="@android:color/holo_red_dark"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="DECLINE"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</RelativeLayout>
